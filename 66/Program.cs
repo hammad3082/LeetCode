@@ -16,9 +16,6 @@ int[] PlusOne(int[] digits)
     }
     else
     {
-        //int[] newResult = new int[digits.Length + 1];
-
-        //bool addOne = true;
         digits[lastindex] = 0;
         for (int i = digits.Length - 2; i >= 0; i--)
         {
@@ -39,12 +36,11 @@ int[] PlusOne(int[] digits)
 
         return list.ToArray();
     }
-
-
-        int[] result = new int[digits.Length];
-    return result;
 }
 
+//int[] newResult = new int[digits.Length + 1];
+
+//bool addOne = true;
 
 int[] PlusOne1(int[] digits)
 {
