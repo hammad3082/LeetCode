@@ -34,9 +34,10 @@ int CalPoints(string[] operations)
         }
         else
         {
-            ints.Add(Convert.ToInt32(operations[i]));
+            rNum = Convert.ToInt32(operations[i]);
+            ints.Add(rNum);
+            Sum += rNum;
             index++;
-            Sum += ints[index];
         }
     }
     //int sum = 0;
