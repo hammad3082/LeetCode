@@ -4,7 +4,7 @@ int LargestPerimeter(int[] nums)
 {
     Array.Sort(nums, (x,y) => y.CompareTo(x));
     //int[] newarr = nums.Reverse();
-    int result = 0;
+    //int result = 0;
     //int sum = 0;
     int abSides = 0;
     int cSide = 0;
@@ -19,7 +19,7 @@ int LargestPerimeter(int[] nums)
            return abSides + cSide;
         }
     }
-    return result;
+    return 0;
 }
 int LargestPerimeter22(int[] nums)
 {
