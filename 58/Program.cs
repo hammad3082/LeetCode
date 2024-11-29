@@ -23,8 +23,6 @@ int LengthOfLastWord(string s)
             }
             len++;
         }
-
-        
     }
-    return chars.Length;
+    return 0;
 }
