@@ -19,13 +19,10 @@ ListNode result = MergeTwoLists(list1, list11);
 ListNode MergeTwoLists(ListNode list1, ListNode list2)
 {
     if (list1 == null)
-    {
         return list2;
-    }
     else if (list2 == null)
-    {
         return list1;
-    }
+
     ListNode ResultHead = new ListNode();
     ListNode ResultTail = ResultHead;
     int a = 0, b = 0;
@@ -62,7 +59,7 @@ ListNode MergeTwoLists(ListNode list1, ListNode list2)
     return ResultHead.next;
 }
 
-ListNode MergeTwoListst(ListNode list1, ListNode list2)
+ListNode MergeTwoListsothers(ListNode list1, ListNode list2)
     {
         ListNode dummy = new ListNode(-1);
         ListNode current = dummy;
