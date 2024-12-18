@@ -9,9 +9,9 @@ int RemoveElement(int[] nums, int val)
     {
         if (nums[i] == val)
         {
-            k++;
             nums[i] = 101;
         }
+        else { k++; }
     }
     Array.Sort(nums);
     return k;
