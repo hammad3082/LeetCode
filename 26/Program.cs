@@ -17,9 +17,7 @@ int RemoveDuplicates(int[] nums)
         }
     }
     nums[k] = nums[len - 1];
-    k++;
-    //Array.Sort(nums);
-    return  k;
+    return  k + 1;
 }
 
 int RemoveDuplicatesff(int[] nums)
