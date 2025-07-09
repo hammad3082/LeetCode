@@ -48,14 +48,9 @@ public class Solution
                     queue.Enqueue(treeNode.right);
             }
 
-
+            result.Add(double.Round(CurrentSum/CurrentLevelLength, 5));
         }
 
         return result;
-    }
-
-    public void Traversal(TreeNode root)
-    {
-
     }
 }
