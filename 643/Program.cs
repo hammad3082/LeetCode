@@ -6,6 +6,28 @@ public class Solution
 {
     public double FindMaxAverage(int[] nums, int k)
     {
+        double maxSum = double.MinValue;
+
+        int left = 0;
+
+        double currentSum = 0;
+
+        for (int i = 0; i < k - 1; i++)
+            currentSum += nums[i];
+
+        for (int rigth = k - 1; rigth < nums.Length; rigth++)
+        {
+            currentSum += nums[rigth];
+
+            maxSum = Math.Max(maxSum, currentSum);
+
+            currentSum -= nums[left++];
+        }
+
+        return maxSum / k;
+    }
+    public double FindMaxAverage_1(int[] nums, int k)
+    {
         double maxAvg = double.MinValue;
 
         int left = 0;
