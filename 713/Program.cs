@@ -3,7 +3,7 @@ sol.NumSubarrayProductLessThanK(new int[] { 1, 2, 3 }, 0);
 
 public class Solution
 {
-    public int NumSubarrayProductLessThanK(int[] nums, int k)
+    public int NumSubarrayProductLessThanK(int[] nums, int k)//TS
     {
         if (k <= 1)
             return 0;
